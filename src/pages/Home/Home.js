@@ -11,7 +11,7 @@ function Home () {
             }, [])
 
           const [deletepost, setDeletePost] = useState([]) 
-        //   const token = 
+         const token = window.localStorage.getItem('token')
               const deletePosst = async()=> {
                   fetch("http://localhost:4000/delete", {
                       method: "POST",
